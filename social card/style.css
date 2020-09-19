@@ -1,0 +1,78 @@
+*{
+    font-family: "Roboto" , sans-serif;
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    transition: 0.2s;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.card{
+    width: 350px;
+    max-width: 350px;
+    height: 350px;
+    max-width: 350px;
+
+    box-sizing: border-box;
+    position: relative;
+
+    background-image: url(logo.png);
+    background-size: cover;
+
+    border-radius: 50%;
+    border: 3px solid #000;
+
+    overflow: hidden;
+}
+.card:hover video{
+    opacity: 0;
+}
+.card:hover div{
+    opacity: 1;
+    z-index: 1;
+}
+.card video{
+    position: absolute;
+
+    width: 100%;
+    opacity: 1;
+}
+.card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    position: absolute;
+
+    width: 100%;
+
+    opacity: 0;
+    z-index: -1;
+}
+.card div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+    color: #fff;
+
+    height: 175px;
+    width: 50%;
+}
+.card div a:hover{
+color: gold;
+text-shadow: 0 0px 15px #111;
+}
+.card div a:nth-child(1){background:#3b599850;}
+.card div a:nth-child(2){background:#00b22d50;}
+.card div a:nth-child(3){background:#211F1F50;}
+.card div a:nth-child(4){background:#00acee50;}
